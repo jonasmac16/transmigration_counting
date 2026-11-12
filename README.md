@@ -127,15 +127,3 @@ Brightness values depend on how images were acquired. An 8-bit image ranges from
 | Real spots or objects are missed | Decrease `promVal` for spot detection. For particle detection, decrease `localContrast`, `minSize`, `minCirc`, or `minBrightness` as appropriate. |
 | Objects merge together | Reduce `sigmaVal`; then review `rollingBall`, `localRadius`, and threshold settings for particle detection. |
 | CSV values differ from expected area units | Check whether the image has a spatial calibration; this changes the area units used by particle detection. |
-
-## Share the code on GitHub
-
-This project is already a local Git repository using the `main` branch. It is safe to publish the code because `.gitignore` excludes the contents of `data/` and `output/`, while keeping empty placeholder folders for collaborators.
-
-For the simplest publishing workflow, use GitHub Desktop:
-
-1. Create a new empty repository on GitHub. Do not add a README or `.gitignore` on the GitHub website.
-2. In GitHub Desktop, choose **File > Add Local Repository** and select this project folder.
-3. Review the files to be committed. You should see the macros, this README, `.gitignore`, and the two `.gitkeep` placeholders, but not your images or analysis results.
-4. Enter an initial commit message, commit the files, then select **Publish repository**.
-5. Choose the appropriate public or private visibility for your project before publishing.

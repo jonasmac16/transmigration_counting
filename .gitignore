@@ -1,0 +1,5 @@
+# Keep empty input and output directories in the repository without tracking data.
+/data/*
+!/data/.gitkeep
+/output/*
+!/output/.gitkeep
